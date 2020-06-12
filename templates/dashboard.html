@@ -1,0 +1,58 @@
+{% extends 'layout.html' %}
+{[files}}
+{% block body %}
+    <h1>Dashboard <small> Welcome </small></h1>
+    <hr>
+    <h2>cat1</h2>
+    <table class="table table-striped">
+        <tr>
+            <th>Article</th>
+            <th>Classify</th>
+        </tr>
+        {% for file in files[0] %}
+            <tr>
+                <td>{{file}}</td>
+                <td><a href="classify/{{file}}" class="btn btn-default pull-right">Classify</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+    <h2>cat2</h2>
+    <table class="table table-striped">
+        <tr>
+            <th>Article</th>
+            <th>Classify</th>
+        </tr>
+        {% for file in files[1] %}
+            <tr>
+                <td>{{file}}</td>
+                <td><a href="classify/{{file}}" class="btn btn-default pull-right">Classify</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+    <h2>cat3</h2>
+    <table class="table table-striped">
+        <tr>
+            <th>Article</th>
+            <th>Classify</th>
+        </tr>
+        {% for file in files[2] %}
+            <tr>
+                <td>{{file}}</td>
+                <td><a href="classify/{{file}}" class="btn btn-default pull-right">Classify</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+    <h2>cat4</h2>
+    <table class="table table-striped">
+        <tr>
+            <th>Article</th>
+            <th>Classify</th>
+        </tr>
+        {% for file in files[3] %}
+            <tr>
+                <td>{{file}}</td>
+                <td><a href="classify/{{file}}" class="btn btn-default pull-right">Classify</a></td>
+            </tr>
+        {% endfor %}
+    </table>
+{% endblock %}
